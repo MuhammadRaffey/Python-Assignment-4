@@ -4,14 +4,14 @@ favNumbers.append(int(input("Enter your first favorite number: ")))
 favNumbers.append(int(input("Enter your second favorite number: ")))
 favNumbers.append(int(input("Enter your third favorite number: ")))
 
-print(f"Hello {name}, Let's explore your favorite numbers:")
+print(f"\n\nHello {name}, Let's explore your favorite numbers:")
 for number in favNumbers:
     print(f"The number {number} is {'even' if number % 2 == 0 else 'odd'}.")
 for number in favNumbers:
     print(f"The number {number} and its square: {(number, number**2)}")
 
 total: int = sum(favNumbers)
-print(f"Amazing! The sum of your favorite numbers is: {total}")
+print(f"\n\nAmazing! The sum of your favorite numbers is: {total}")
 
 if total > 1:
     is_prime: bool = True
